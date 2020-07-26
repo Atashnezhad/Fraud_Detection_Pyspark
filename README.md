@@ -154,7 +154,7 @@ XGBoost results:
 ### Recommendation and next steps
 * Hyperparameter tuning:
 The hyperparameters have a big impact on the output of ML algorithms performance. It is suggested to run the algorithm on a small sample size with different hyper-parameters values and compare and find the best set. 
-Another approach is to use powerful searching algorithm like the DE algorithm to search the Hyperparameter domain and to find the best available set. This is done in python at here.
+Another approach is to use powerful searching algorithm like the DE algorithm to search the Hyperparameter domain and to find the best available set. This is have been done in python here.
 * Data feathering: 
 It is suggested to feather new columns using available data. Feeding more input parameters can be helpful if the new feathered data are prepared wisely.
 
