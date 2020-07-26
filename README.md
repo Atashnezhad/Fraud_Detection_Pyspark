@@ -124,8 +124,25 @@ data.groupBy('is_attributed').count().show()
 ```
 As it is seen the data is very imbalance with just 0.25% value of 1.
 
+### Step 4 - Oversampling, dropping some columns, splitting, vectorizing, and training.
+The ratio calculate above is used for oversampling the 1 and achieve balance dataset before using in the training.
+The data later is combined and fed into the Random Forest algorithm.
+For sack of simplicity, two columns are droped including the click time and attributed time.
+The performance of model was evaluated.
 
+### Step 5 - Applying trained model on test data set.
 
+```python
+data_to_submit.groupBy('is_attributed').count().show()
+```
+Lets before submiting the results, look inside and see the model performance.
+```
+|is_attributed|   count|
+|-------------|--------|
+|          0.0|15921222|
+|          1.0| 2869247|
+```
+ We need to improve the results by tuning the model hyperparameters plus some data feathering are suggested.
 
 
 
