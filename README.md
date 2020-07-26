@@ -137,10 +137,18 @@ data_to_submit.groupBy('is_attributed').count().show()
 ```
 Lets before submiting the results for Random Forest algorithm, look inside and see the model performance.
 ```
+Random Forest results:
 |is_attributed|   count|
 |-------------|--------|
 |          0.0|15921222|
 |          1.0| 2869247|
+
+XGBoost results:
+|is_attributed|   count|
+|-------------|--------|
+|          0.0|17946533|
+|          1.0|  843936|
++-------------+--------+
 ```
  We need to improve the results by tuning the model hyperparameters plus some data feathering are suggested.
 
