@@ -14,7 +14,7 @@ TalkingData, China’s largest independent big data service platform, covers ove
 
 ### Project Statement
 ---
-Fraud detection using mllib in spark. Random Forest and xgboost were applied on big data (7GB).
+Fraud detection using mllib in spark. **Random Forest** and **xgboost** were applied on big data (7GB).
 The Pyspark was used along with the data from TalkingData a Chinese company for fraud detection. Two ML algorithms including Random Forest and Xgboost were applied. This is a supervised classification problem and the objective is to predict whether a user will download an app after clicking a mobile app advertisement or Not.
 
 ### Project structure
@@ -126,7 +126,7 @@ As it is seen the data is very imbalance with just 0.25% value of 1.
 
 ### Step 4 - Oversampling, dropping some columns, splitting, vectorizing, and training.
 The ratio calculate above is used for oversampling the 1 and achieve balance dataset before using in the training.
-The data later is combined and fed into the Random Forest algorithm.
+The data later is combined and fed into the Ml algorithm.
 For sack of simplicity, two columns are droped including the click time and attributed time.
 The performance of model was evaluated.
 
@@ -135,7 +135,7 @@ The performance of model was evaluated.
 ```python
 data_to_submit.groupBy('is_attributed').count().show()
 ```
-Lets before submiting the results, look inside and see the model performance.
+Lets before submiting the results for Random Forest algorithm, look inside and see the model performance.
 ```
 |is_attributed|   count|
 |-------------|--------|
