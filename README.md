@@ -72,12 +72,11 @@ is_attributed: not included
 
 
 ### Step 2 - Data descriptions
-A pyspark session initiated and the data was read using sql context as follow.
+A pyspark session initiated and the data was read using read.csv as follow.
 
 ```python
-from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('Fraud').getOrCreate()
-data = sqlContext.sql("SELECT * FROM fraud_train_sample_csv")
+data = spark.read.csv('train.csv', inferSchema=True, header=True)
+data.show(5)
 data.show(5)
 ```
 The first five rows of data are seen at the following table.
