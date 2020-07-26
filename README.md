@@ -43,6 +43,16 @@ sampleSubmission.csv - a sample submission file in the correct format
 UPDATE: test_supplement.csv - This is a larger test set that was unintentionally released at the start of the competition. It is not necessary to use this data, but it is permitted to do so. The official test data is a subset of this data.
 Data fields
 Each row of the training data contains a click record, with the following features.
+```
+root
+ |-- ip: integer (nullable = true)
+ |-- app: integer (nullable = true)
+ |-- device: integer (nullable = true)
+ |-- os: integer (nullable = true)
+ |-- channel: integer (nullable = true)
+ |-- is_attributed: integer (nullable = true)
+ |-- features: vector (nullable = true)
+```
 
 * ip: ip address of click.
 * app: app id for marketing.
@@ -70,7 +80,7 @@ spark = SparkSession.builder.appName('Fraud').getOrCreate()
 data = sqlContext.sql("SELECT * FROM fraud_train_sample_csv")
 data.show(5)
 ```
-The data head is seen at the following table.
+The first five rows of data are seen at the following table.
 ```
 |    ip|app|device| os|channel|         click_time|attributed_time|is_attributed|
 |------|---|------|---|-------|-------------------|---------------|-------------|
@@ -81,8 +91,19 @@ The data head is seen at the following table.
 | 68413| 12|     1|  1|    178|2017-11-09 09:00:09|           null|            0|
 ```
 
-
-
+### Step 3 - Data cleaning
+In this study for sack of simplicity the two columns including the click_time and attributed_time are deleted from data.
+```python
+data = data.drop('click_time','attributed_time')
+data.show(3)
+```
+```
+|    ip|app|device| os|channel|is_attributed|
+|------|---|------|---|-------|-------------|
+| 87540| 12|     1| 13|    497|            0|
+|105560| 25|     1| 17|    259|            0|
+|101424| 12|     1| 19|    212|            0|
+```
 
 
 
