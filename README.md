@@ -15,11 +15,7 @@ TalkingData, China’s largest independent big data service platform, covers ove
 ### Project Statement
 ---
 Fraud detection using mllib in spark. Random Forest and xgboost were applied on big data (7GB).
-
-The Pyspark was used along with the data from TalkingData Chinese company for fraud detection. Two ML algorithms including Random Forest and Xgboost were applied. This is a supervised classification problem.
-
-the data divided to 70% and 30% for training and testing purposes. click time was dropped from data. accuracy was used as metric evaluation of the models.
-
+The Pyspark was used along with the data from TalkingData a Chinese company for fraud detection. Two ML algorithms including Random Forest and Xgboost were applied. This is a supervised classification problem and the objective is to predict whether a user will download an app after clicking a mobile app advertisement or Not.
 
 ### Project structure
 ---
@@ -35,7 +31,34 @@ project-global_warming_NLP
 |__ README.md
 ```
 
+### Step 1 - Data descriptions
+---
+The data in this study was provided by TalkingData company at the following [Link](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection/data).
+The data are in csv format and incudes the train, train_sample, test, and sample_Submission which is used to show the format of submitting csv file.
 
+train.csv - the training set
+train_sample.csv - 100,000 randomly-selected rows of training data, to inspect data before downloading full set
+test.csv - the test set
+sampleSubmission.csv - a sample submission file in the correct format
+UPDATE: test_supplement.csv - This is a larger test set that was unintentionally released at the start of the competition. It is not necessary to use this data, but it is permitted to do so. The official test data is a subset of this data.
+Data fields
+Each row of the training data contains a click record, with the following features.
+
+* ip: ip address of click.
+* app: app id for marketing.
+* device: device type id of user mobile phone (e.g., iphone 6 plus, iphone 7, huawei mate 7, etc.)
+* os: os version id of user mobile phone
+* channel: channel id of mobile ad publisher
+* click_time: timestamp of click (UTC)
+* attributed_time: if user download the app for after clicking an ad, this is the time of the app download
+* is_attributed: the target that is to be predicted, indicating the app was downloaded
+
+Note that ip, app, device, os, and channel are encoded.
+
+The test data is similar, with the following differences:
+
+click_id: reference for making predictions
+is_attributed: not included
 
 
 
