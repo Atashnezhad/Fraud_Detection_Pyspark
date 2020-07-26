@@ -1,3 +1,5 @@
+<div style="text-align:center"><img src="assets/tenor.gif" /></div>
+
 # Fraud Detection Challenge using pyspark
 
 This is a classification problem. The ML algorithm should detect the fraud clicks, taking the click time, IP address, etc into account. The provided data is very unbalanced with less than 1% fraud clicks.
