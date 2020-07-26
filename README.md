@@ -77,20 +77,19 @@ A pyspark session initiated and the data was read using read.csv as follow.
 ```python
 data = spark.read.csv('train.csv', inferSchema=True, header=True)
 data.show(5)
-data.show(5)
 ```
 The first five rows of data are seen at the following table.
 ```
 |    ip|app|device| os|channel|         click_time|attributed_time|is_attributed|
 |------|---|------|---|-------|-------------------|---------------|-------------|
-| 87540| 12|     1| 13|    497|2017-11-07 09:30:38|           null|            0|
-|105560| 25|     1| 17|    259|2017-11-07 13:40:27|           null|            0|
-|101424| 12|     1| 19|    212|2017-11-07 18:05:24|           null|            0|
-| 94584| 13|     1| 13|    477|2017-11-07 04:58:08|           null|            0|
-| 68413| 12|     1|  1|    178|2017-11-09 09:00:09|           null|            0|
+| 83230|  3|     1| 13|    379|2017-11-06 14:32:21|           null|            0|
+| 17357|  3|     1| 19|    379|2017-11-06 14:33:34|           null|            0|
+| 35810|  3|     1| 13|    379|2017-11-06 14:34:12|           null|            0|
+| 45745| 14|     1| 13|    478|2017-11-06 14:34:52|           null|            0|
+|161007|  3|     1| 13|    379|2017-11-06 14:35:08|           null|            0|
 ```
 
-### Step 3 - Data cleaning
+### Step 3 - Data cleaning and EDA
 In this study for sack of simplicity the two columns including the click_time and attributed_time are deleted from data.
 ```python
 data = data.drop('click_time','attributed_time')
@@ -103,9 +102,27 @@ data.show(3)
 |105560| 25|     1| 17|    259|            0|
 |101424| 12|     1| 19|    212|            0|
 ```
+And count the distinct values as follow...
+```python
+data.agg(*(countDistinct(col(c)).alias(c) for c in data.columns)).show()
+```
+```
+|    ip|app|device| os|channel|click_time|attributed_time|is_attributed|
+|------|---|------|---|-------|----------|---------------|-------------|
+|277396|706|  3475|800|    202|    259620|         182057|            2|
+```
+The column "is_attributed" is the goal here. Let's see whether the data is balanced or not.
 
-
-
+```python
+data.groupBy('is_attributed').count().show()
+```
+```
+|is_attributed|    count|
+|-------------|---------|
+|            1|   456846|
+|            0|184447044|
+```
+As it is seen the data is very imbalance with just 0.25% value of 1.
 
 
 
