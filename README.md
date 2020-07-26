@@ -3,6 +3,7 @@
 </p>
 
 
+
 # Fraud Detection Challenge using pyspark
 
 This is a classification problem. The ML algorithm should detect the fraud clicks, taking the click time, IP address, etc into account. The provided data is very unbalanced with less than 1% fraud clicks.
@@ -153,4 +154,5 @@ XGBoost results:
  We need to improve the results by tuning the model hyperparameters plus some data feathering are suggested.
 
 
+[Gif reference](https://tenor.com/view/phishing-phisher-hacker-security-gif-16575067).
 
