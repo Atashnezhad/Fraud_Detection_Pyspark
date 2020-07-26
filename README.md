@@ -1,4 +1,7 @@
-<div style="text-align:center"><img src="assets/tenor.gif" /></div>
+<p align="center">
+  <img width="460" height="300" src="assets/tenor.gif" >
+</p>
+
 
 # Fraud Detection Challenge using pyspark
 
