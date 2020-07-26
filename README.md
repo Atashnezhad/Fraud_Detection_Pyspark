@@ -131,7 +131,7 @@ For sack of simplicity, two columns are droped including the click time and attr
 The performance of model was evaluated.
 
 ### Step 5 - Applying trained model on test data set.
-
+The test data set was prepared and similarity two columns dropped and vectorized. The trained model was applied and the results were submitted.
 ```python
 data_to_submit.groupBy('is_attributed').count().show()
 ```
