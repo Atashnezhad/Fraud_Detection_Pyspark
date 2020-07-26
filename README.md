@@ -72,7 +72,7 @@ is_attributed: not included
 
 
 ### Step 2 - Data descriptions
-A pyspark session initiated and the data was read using read.csv as follow.
+A pyspark session initiated and the data was read using read.csv as follows.
 
 ```python
 data = spark.read.csv('train.csv', inferSchema=True, header=True)
@@ -122,20 +122,20 @@ data.groupBy('is_attributed').count().show()
 |            1|   456846|
 |            0|184447044|
 ```
-As it is seen the data is very imbalance with just 0.25% value of 1.
+As it is seen the data is a very imbalance with just 0.25% value of 1.
 
 ### Step 4 - Oversampling, dropping some columns, splitting, vectorizing, and training.
-The ratio calculate above is used for oversampling the 1 and achieve balance dataset before using in the training.
+The calculated ratio above is used for oversampling the 1 and achieve balance dataset before using in the training.
 The data later is combined and fed into the Ml algorithm.
-For sack of simplicity, two columns are droped including the click time and attributed time.
-The performance of model was evaluated.
+For the sack of simplicity, two columns are dropped including the click time and attributed time.
+The performance of the model was evaluated.
 
 ### Step 5 - Applying trained model on test data set.
 The test data set was prepared and similarity two columns dropped and vectorized. The trained model was applied and the results were submitted.
 ```python
 data_to_submit.groupBy('is_attributed').count().show()
 ```
-Lets before submiting the results for Random Forest algorithm, look inside and see the model performance.
+Lets before submitting the results for the Random Forest algorithm, look inside and see the model performance.
 ```
 Random Forest results:
 |is_attributed|   count|
@@ -151,7 +151,6 @@ XGBoost results:
 +-------------+--------+
 ```
  We need to improve the results by tuning the model hyperparameters plus some data feathering are suggested.
-
 
 
 
