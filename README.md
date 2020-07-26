@@ -151,7 +151,9 @@ XGBoost results:
 |          1.0|  843936|
 +-------------+--------+
 ```
- We need to improve the results by tuning the model hyperparameters plus some data feathering are suggested.
+### Recommendation and next steps
+* Hyperparameter tuning.
+* Data feathering.
 
 
 [Gif reference](https://tenor.com/view/phishing-phisher-hacker-security-gif-16575067).
