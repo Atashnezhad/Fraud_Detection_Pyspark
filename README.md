@@ -61,6 +61,35 @@ click_id: reference for making predictions
 is_attributed: not included
 
 
+### Step 2 - Data descriptions
+A pyspark session initiated and the data was read using sql context as follow.
+
+```python
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.appName('Fraud').getOrCreate()
+data = sqlContext.sql("SELECT * FROM fraud_train_sample_csv")
+data.show(5)
+```
+The data head is seen at the following table.
+```
+|    ip|app|device| os|channel|         click_time|attributed_time|is_attributed|
+|------|---|------|---|-------|-------------------|---------------|-------------|
+| 87540| 12|     1| 13|    497|2017-11-07 09:30:38|           null|            0|
+|105560| 25|     1| 17|    259|2017-11-07 13:40:27|           null|            0|
+|101424| 12|     1| 19|    212|2017-11-07 18:05:24|           null|            0|
+| 94584| 13|     1| 13|    477|2017-11-07 04:58:08|           null|            0|
+| 68413| 12|     1|  1|    178|2017-11-09 09:00:09|           null|            0|
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
