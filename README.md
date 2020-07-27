@@ -22,7 +22,7 @@ The Pyspark was used along with the data from TalkingData a Chinese company for 
 ---
 The project structure provided at the following.
 ```
-project-global_warming_NLP
+Fraud Detection Challenge using pyspark
     
 |__ codes/
 |   |__ RF_FraudDetection.ipynb
