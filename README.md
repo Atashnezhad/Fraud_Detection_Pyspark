@@ -174,10 +174,12 @@ Please check out my docker hub account [here](https://hub.docker.com/repository/
 To have this project you may simply pull the image from docker hub and run the codes yourself.
 
 ### Don't know how to use the Docker technology? See my tutorial on Medium.
+
 <p align="left">
   <img width="500" src="assets/Medi2.PNG" >
 </p>
-Please check my toturial on Running Python code in Jupyter notebook on Docker on [Medium](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
+
+Please check my toturial on Running Python code in Jupyter notebook on Docker on [Link](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 
 
 [Gif reference](https://tenor.com/view/phishing-phisher-hacker-security-gif-16575067).
