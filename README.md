@@ -159,5 +159,12 @@ Another approach is to use powerful searching algorithm like the DE algorithm to
 It is suggested to feather new columns using available data. Feeding more input parameters can be helpful if the new feathered data are prepared wisely.
 
 
+
+### Do you wanna run codes without Hassle? Use Docker Technology then!
+Please check out my docker hub account [here](https://hub.docker.com/repository/docker/atashnezhad/ml_in_spark).
+To have this project you may simply pull the image from docker hub and run the codes yourself.
+
+
+
 [Gif reference](https://tenor.com/view/phishing-phisher-hacker-security-gif-16575067).
 
