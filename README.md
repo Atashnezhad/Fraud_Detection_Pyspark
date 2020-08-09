@@ -127,6 +127,14 @@ As it is seen the data is a very imbalance with just 0.25% value of 1.
 
 ### Step 4 - Oversampling, dropping some columns, splitting, vectorizing, and training.
 The calculated ratio above is used for oversampling the 1 and achieve balance dataset before using in the training.
+```
+
+|is_attributed|    count|
+|-------------|---------|
+|            1|184108938|
+|            0|184447044|
+
+```
 The data later is combined and fed into the Ml algorithm.
 For the sack of simplicity, two columns are dropped including the click time and attributed time.
 The performance of the model was evaluated.
