@@ -161,6 +161,9 @@ It is suggested to feather new columns using available data. Feeding more input 
 
 
 ### Do you wanna run codes without Hassle? Use Docker Technology then!
+<p align="center">
+  <imgsrc="assets/Docker.PNG" >
+</p>
 Please check out my docker hub account [here](https://hub.docker.com/repository/docker/atashnezhad/ml_in_spark).
 To have this project you may simply pull the image from docker hub and run the codes yourself.
 
