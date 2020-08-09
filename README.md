@@ -160,7 +160,7 @@ It is suggested to feather new columns using available data. Feeding more input 
 
 
 
-### Do you wanna run codes without Hassle? Use Docker Technology then!
+### Do you wanna run codes without Hassle? Try Docker Technology then!
  
 
 <p align="center">
@@ -179,7 +179,7 @@ To have this project you may simply pull the image from docker hub and run the c
   <img width="500" src="assets/Medi2.PNG" >
 </p>
 
-Please check my toturial on Running Python code in Jupyter notebook on Docker on [Link](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
+Please check my toturial on Running Python code in Jupyter notebook on Docker on [Medium](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 
 
 [Gif reference](https://tenor.com/view/phishing-phisher-hacker-security-gif-16575067).
