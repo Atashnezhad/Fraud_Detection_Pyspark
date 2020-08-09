@@ -173,9 +173,9 @@ It is suggested to feather new columns using available data. Feeding more input 
 Please check out my docker hub account [here](https://hub.docker.com/repository/docker/atashnezhad/ml_in_spark).
 To have this project you may simply pull the image from docker hub and run the codes yourself.
 
-### Don't know how to use the Docker technology?
+### Don't know how to use the Docker technology? See my tutorial on Medium.
 <p align="center">
-  <img width="1000" src="assets/Medi.PNG" >
+  <img width="800" src="assets/Medi.PNG" >
 </p>
 Please check my toturial on Running Python code in Jupyter notebook on Docker on [Medium](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 
