@@ -180,6 +180,5 @@ To have this project you may simply pull the image from docker hub and run the c
 Please check my toturial on Running Python code in Jupyter notebook on Docker on [Medium](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
 
 
-
 [Gif reference](https://tenor.com/view/phishing-phisher-hacker-security-gif-16575067).
 
