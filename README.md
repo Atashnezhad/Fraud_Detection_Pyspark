@@ -23,13 +23,41 @@ The Pyspark was used along with the data from TalkingData a Chinese company for 
 The project structure provided at the following.
 ```
 Fraud Detection Challenge using pyspark
-    
-|__ codes/
-|   |__ RF_FraudDetection.ipynb
-|   |__ XGB_FraudDetection.ipynb   
-|__ datasets/
-|__ plots/
-|__ README.md
+Fraud_Detection_Pyspark/
+├── assets/
+│   ├── .ipynb_checkpoints/
+│   ├── Docker.PNG
+│   ├── Medi.PNG
+│   ├── Medi2.PNG
+│   └── tenor.gif
+├── codes/
+│   ├── .ipynb_checkpoints/
+│   ├── EDA.ipynb
+│   ├── RF_FraudDetection.ipynb
+│   └── XGB_FraudDetection.ipynb
+├── datasets/
+│   └── train_sample.csv
+├── Figures/
+│   ├── All_distribution_plots.png
+│   ├── All_distribution_plots_1.png
+│   ├── All_distribution_plots_1_log.png
+│   ├── All_distribution_plots_2_sea.png
+│   ├── All_distribution_plots_oversampled.png
+│   ├── All_distribution_plots_oversampled_transfered.png
+│   ├── All_distribution_plots_transfered.png
+│   ├── EDA_corr_plot.png
+│   ├── parallel_categories.png
+│   ├── parallel_categories2.png
+│   ├── parallel_categories_oversampled.png
+│   ├── parallel_categories_oversampled2.png
+│   ├── parallel_categories_transfered_oversampled.png
+│   ├── parallel_categories_transfered_oversampled2.png
+│   ├── parallel_coordinates.png
+│   └── plots_3.png
+├── LICENSE
+├── New folder/
+├── README.md
+└── Respo_folder_tree.ipynb
 ```
 
 ### Step 1 - Data descriptions
