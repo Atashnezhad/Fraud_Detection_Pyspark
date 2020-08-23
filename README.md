@@ -32,7 +32,7 @@ Fraud_Detection_Pyspark/
 │   └── tenor.gif
 ├── codes/
 │   ├── .ipynb_checkpoints/
-│   ├── EDA.ipynb
+│   ├── Part 01 - Read data and EDA.ipynb
 │   ├── RF_FraudDetection.ipynb
 │   └── XGB_FraudDetection.ipynb
 ├── datasets/
