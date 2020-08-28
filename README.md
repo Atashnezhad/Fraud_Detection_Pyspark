@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="assets/tenor.gif" >
+  <img width="460" height="300" src="Assets/tenor.gif" >
 </p>
 
 
@@ -200,7 +200,7 @@ It is suggested to feather new columns using available data. Feeding more input 
  
 
 <p align="center">
-  <img width="1000" src="assets/Docker.PNG" >
+  <img width="1000" src="Assets/Docker.PNG" >
 </p>
 
 
@@ -212,7 +212,7 @@ To have this project you may simply pull the image from docker hub and run the c
 ### Don't know how to use the Docker technology? See my tutorial on Medium.
 
 <p align="left">
-  <img width="500" src="assets/Medi2.PNG" >
+  <img width="500" src="Assets/Medi2.PNG" >
 </p>
 
 Please check my toturial on Running Python code in Jupyter notebook on Docker on [Medium](https://medium.com/@atashnezhad1/in-this-tutorial-we-will-learn-the-very-basics-of-running-the-jupyter-notebook-using-docker-9b347c9058d9).
