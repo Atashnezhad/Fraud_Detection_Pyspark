@@ -14,7 +14,7 @@ def Apply(seconds):
     seconds %= 3600
     minutes = seconds // 60
     seconds %= 60
-    print('excution time is = ', "%d:%02d:%02d" % (hour, minutes, seconds)) 
+    print('exEcution time is = ', "%d:%02d:%02d" % (hour, minutes, seconds)) 
 
 def Apply2():
 
